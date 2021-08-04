@@ -1,0 +1,30 @@
+:root {
+    -white: #FFF;
+    -dark-blue: hsl(233, 26%, 24%);
+    -lime-green: hsl(136, 65%, 51%);
+    -bright-cyan: hsl(192, 70%, 51%);
+    -grayish-blue: hsl(233, 8%, 62%);
+    -light-grayish-blue: hsl(220, 16%, 96%);
+    -very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+body {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.d-none {
+    display: none;
+}

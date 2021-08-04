@@ -1,0 +1,33 @@
+:root {
+  -white: #FFF;
+  -dark-blue: #2d314d;
+  -lime-green: #31d35c;
+  -bright-cyan: #2bb7da;
+  -grayish-blue: #9698a6;
+  -light-grayish-blue: #f3f4f6;
+  -very-light-gray: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+}
+
+body {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.d-none {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
