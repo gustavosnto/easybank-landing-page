@@ -1,11 +1,11 @@
 :root {
-  -white: #FFF;
-  -dark-blue: #2d314d;
-  -lime-green: #31d35c;
-  -bright-cyan: #2bb7da;
-  -grayish-blue: #9698a6;
-  -light-grayish-blue: #f3f4f6;
-  -very-light-gray: #fafafa;
+  --white: #FFF;
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
 }
 
 * {
@@ -19,6 +19,15 @@
 body {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  background-color: var(--very-light-gray);
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
 }
 
 .container {
@@ -29,5 +38,274 @@ body {
 
 .d-none {
   display: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--dark-blue);
+  padding: 12px 35px;
+  border-radius: 20px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.btn-request {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to bottom right, #31d35c, #2bb7da);
+}
+
+.btn-request:hover {
+  opacity: 70%;
+}
+
+header.top-header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--white);
+}
+
+header.top-header .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.top-header .container .logo img {
+  display: block;
+}
+
+header.top-header .container nav ul {
+  list-style: none;
+}
+
+header.top-header .container nav ul li {
+  display: inline;
+  padding-right: 14px;
+}
+
+header.top-header .container nav ul li a {
+  color: var(--grayish-blue);
+}
+
+header.top-header .container nav ul li a:hover {
+  color: var(--dark-blue);
+  padding-bottom: 30px;
+  border-bottom: 4px solid var(--lime-green);
+}
+
+section.hero {
+  width: 100%;
+}
+
+section.hero .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.hero .container .content-hero {
+  -ms-flex-preferred-size: calc(40% - 20px);
+      flex-basis: calc(40% - 20px);
+  padding: 0 10px;
+}
+
+section.hero .container .content-hero h1 {
+  font-size: 2.8em;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+section.hero .container .content-hero p {
+  font-size: 1em;
+  color: var(--grayish-blue);
+  padding-bottom: 30px;
+}
+
+section.hero .container .img-hero {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+section.hero .container .img-hero img {
+  width: 100%;
+}
+
+section.about {
+  width: 100%;
+  padding: 100px 0;
+  background-color: var(--light-grayish-blue);
+}
+
+section.about .container > header {
+  width: 55%;
+}
+
+section.about .container > header h1 {
+  font-size: 2.2em;
+  padding-bottom: 20px;
+}
+
+section.about .container > header p {
+  color: var(--grayish-blue);
+  padding-bottom: 80px;
+}
+
+section.about .container section.vantages {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.about .container section.vantages article {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding-right: 16px;
+}
+
+section.about .container section.vantages article h1 {
+  font-size: 1.3em;
+  padding: 25px 0;
+}
+
+section.about .container section.vantages article p {
+  color: var(--grayish-blue);
+}
+
+section.blog {
+  width: 100%;
+  padding: 100px 0;
+}
+
+section.blog .container header h1 {
+  font-size: 2.4em;
+  padding-bottom: 60px;
+}
+
+section.blog .container .blog-articles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.blog .container .blog-articles article {
+  -ms-flex-preferred-size: calc(25% - 20px);
+      flex-basis: calc(25% - 20px);
+  background-color: var(--white);
+  border-radius: 6px;
+}
+
+section.blog .container .blog-articles article img {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+}
+
+section.blog .container .blog-articles article header {
+  padding: 20px;
+}
+
+section.blog .container .blog-articles article header span, section.blog .container .blog-articles article header p {
+  font-size: .8em;
+  line-height: 1.5;
+  color: var(--grayish-blue);
+}
+
+section.blog .container .blog-articles article header h1 {
+  font-size: 1.1em;
+  padding: 10px 0;
+}
+
+section.blog .container .blog-articles article header h1 a {
+  color: var(--dark-blue);
+}
+
+section.blog .container .blog-articles article header h1 a:hover {
+  color: var(--lime-green);
+}
+
+footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: var(--dark-blue);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .container .ft-1 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+footer .container .ft-1 li {
+  display: inline;
+}
+
+footer .container .ft-2, footer .container .ft-3 {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .ft-2 li, footer .container .ft-3 li {
+  padding-bottom: 15px;
+}
+
+footer .container .ft-2 li:last-child, footer .container .ft-3 li:last-child {
+  padding-bottom: 0;
+}
+
+footer .container .ft-2 li a, footer .container .ft-3 li a {
+  color: var(--white);
+}
+
+footer .container .ft-2 li a:hover, footer .container .ft-3 li a:hover {
+  color: var(--bright-cyan);
+}
+
+footer .container .ft-4 {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  text-align: end;
+}
+
+footer .container .ft-4 p {
+  padding-top: 20px;
+  color: var(--grayish-blue);
 }
 /*# sourceMappingURL=style.css.map */
