@@ -323,7 +323,7 @@ footer .container .ft-4 p {
   section.hero .container .content-hero {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
-    padding: 0 10px;
+    padding: 0 10px 80px 10px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -352,6 +352,7 @@ footer .container .ft-4 p {
   }
   section.about .container header p {
     font-size: .8em;
+    padding-bottom: 40px;
   }
   section.about .container section.vantages {
     width: calc(100% - 20px);
