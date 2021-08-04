@@ -308,4 +308,101 @@ footer .container .ft-4 p {
   padding-top: 20px;
   color: var(--grayish-blue);
 }
+
+@media (max-width: 36em) {
+  header.top-header {
+    width: 100%;
+    padding: 20px;
+  }
+  header.top-header nav.nav-desk {
+    display: none;
+  }
+  header.top-header .request {
+    display: none;
+  }
+  section.hero .container .content-hero {
+    -ms-flex-preferred-size: calc(100% - 20px);
+        flex-basis: calc(100% - 20px);
+    padding: 0 10px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  section.hero .container .content-hero h1 {
+    font-size: 2em;
+  }
+  section.hero .container .content-hero p {
+    font-size: .8em;
+  }
+  section.hero .container .img-hero {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  section.hero .container .img-hero img {
+    width: 50%;
+  }
+  section.about .container header {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    text-align: center;
+  }
+  section.about .container header p {
+    font-size: .8em;
+  }
+  section.about .container section.vantages {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    text-align: center;
+  }
+  section.about .container section.vantages article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-right: 0px;
+    margin-top: 25px;
+  }
+  section.about .container section.vantages article p {
+    font-size: .8em;
+  }
+  section.blog .container > header h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  section.blog .container .blog-articles {
+    width: 100%;
+    padding: 0 20px;
+    display: block;
+  }
+  section.blog .container .blog-articles article {
+    margin-top: 15px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0px;
+  }
+  footer .container {
+    padding: 20px;
+  }
+  footer .container .ft-1 {
+    padding-bottom: 20px;
+  }
+  footer .container .ft-1, footer .container .ft-2, footer .container .ft-3, footer .container .ft-4 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    display: block;
+  }
+  footer .container .ft-2 li:last-child, footer .container .ft-3 li:last-child {
+    padding-bottom: 15px;
+  }
+  footer .container .ft-4 {
+    padding-top: 20px;
+  }
+  footer .container .ft-4 p {
+    font-size: .8em;
+  }
+}
 /*# sourceMappingURL=style.css.map */

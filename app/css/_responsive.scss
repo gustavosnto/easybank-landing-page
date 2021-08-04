@@ -1,0 +1,128 @@
+@media (max-width: 36em) {
+    header.top-header {
+        width: 100%;
+        padding: 20px;
+
+        & nav.nav-desk {
+            display: none;
+        }
+
+        & .request {
+            display: none;
+        }
+    }
+
+    section.hero {
+        & .container {
+            & .content-hero {
+                flex-basis: calc(100% - 20px);
+                padding: 0 10px;
+                order: 2;
+                text-align: center;
+
+                & h1 {
+                    font-size: 2em;
+                }
+
+                & p {
+                    font-size: .8em;
+                }
+            }
+
+            & .img-hero {
+                flex-basis: 100%;
+                order: 1;
+
+                & img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    section.about {
+        & .container {
+            & header {
+                width: calc(100% - 20px);
+                padding: 0 10px;
+                text-align: center;
+                
+                & p {
+                    font-size: .8em;
+                }
+            }
+ 
+            & section.vantages {
+                width: calc(100% - 20px);
+                padding: 0 10px;
+                text-align: center;
+                
+                & article {
+                    flex-basis: 100%;
+                    padding-right: 0px;
+                    margin-top: 25px;
+
+                    & p {
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+
+    section.blog {
+        & .container {
+            & > header h1 {
+                font-size: 2em;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            & .blog-articles {
+                width: 100%;
+                padding: 0 20px;
+                display: block;
+
+                & article {
+                    margin-top: 15px;
+                    flex-basis: 100%;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
+    footer {
+        & .container {
+            padding: 20px;
+            
+
+            & .ft-1 {
+                padding-bottom: 20px;
+            }
+
+            & .ft-1, .ft-2, .ft-3, .ft-4 {
+                flex-basis: 100%;
+                text-align: center;
+                display: block;
+            }
+
+            
+            & .ft-2, .ft-3 {
+                & li {
+                    &:last-child {
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+
+            & .ft-4 {
+                padding-top: 20px;
+
+                & p {
+                    font-size: .8em;;
+                }
+            }
+        }
+    }
+}
