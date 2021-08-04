@@ -346,8 +346,8 @@ footer .container .ft-4 p {
     width: 50%;
   }
   section.about .container header {
-    width: calc(100% - 20px);
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 20px;
     text-align: center;
   }
   section.about .container header p {
@@ -355,18 +355,19 @@ footer .container .ft-4 p {
     padding-bottom: 40px;
   }
   section.about .container section.vantages {
-    width: calc(100% - 20px);
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 40px;
     text-align: center;
   }
   section.about .container section.vantages article {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     padding-right: 0px;
-    margin-top: 25px;
+    margin-top: 35px;
   }
   section.about .container section.vantages article p {
-    font-size: .8em;
+    font-size: .8zem;
+    line-height: 1.5;
   }
   section.blog .container > header h1 {
     font-size: 2em;

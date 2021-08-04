@@ -43,8 +43,8 @@
     section.about {
         & .container {
             & header {
-                width: calc(100% - 20px);
-                padding: 0 10px;
+                width: 100%;
+                padding: 0 20px;
                 text-align: center;
                 
                 & p {
@@ -54,17 +54,18 @@
             }
  
             & section.vantages {
-                width: calc(100% - 20px);
-                padding: 0 10px;
+                width: 100%;
+                padding: 0 40px;
                 text-align: center;
                 
                 & article {
                     flex-basis: 100%;
                     padding-right: 0px;
-                    margin-top: 25px;
+                    margin-top: 35px;
 
                     & p {
-                        font-size: .8em;
+                        font-size: .8zem;
+                        line-height: 1.5;
                     }
                 }
             }
