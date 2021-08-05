@@ -182,6 +182,10 @@ footer {
         & .ft-1 {
             flex-basis: 25%;
 
+            & > img {
+                padding-bottom: 35px;
+            }
+
             & .social {
                 width: 100%;
             }

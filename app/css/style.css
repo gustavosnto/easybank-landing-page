@@ -267,6 +267,10 @@ footer .container .ft-1 {
       flex-basis: 25%;
 }
 
+footer .container .ft-1 > img {
+  padding-bottom: 35px;
+}
+
 footer .container .ft-1 .social {
   width: 100%;
 }
