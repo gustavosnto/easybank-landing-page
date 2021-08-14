@@ -1,5 +1,5 @@
 :root {
-    --white: #FFF;
+    --white: #fff;
     --dark-blue: hsl(233, 26%, 24%);
     --lime-green: hsl(136, 65%, 51%);
     --bright-cyan: hsl(192, 70%, 51%);
@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
+    font-family: "Public Sans", sans-serif;
 }
 
 body {
@@ -20,11 +20,15 @@ body {
     background-color: var(--very-light-gray);
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 300;
 }
 

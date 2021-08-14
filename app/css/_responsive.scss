@@ -39,7 +39,7 @@
                 }
 
                 & p {
-                    font-size: .8em;
+                    font-size: 0.8em;
                 }
             }
 
@@ -56,25 +56,25 @@
                 width: 100%;
                 padding: 0 20px;
                 text-align: center;
-                
+
                 & p {
-                    font-size: .8em;
+                    font-size: 0.8em;
                     padding-bottom: 40px;
                 }
             }
- 
+
             & section.vantages {
                 width: 100%;
                 padding: 0 40px;
                 text-align: center;
-                
+
                 & article {
                     flex-basis: 100%;
                     padding-right: 0px;
                     margin-top: 35px;
 
                     & p {
-                        font-size: .8zem;
+                        font-size: 0.8zem;
                         line-height: 1.5;
                     }
                 }
@@ -107,20 +107,22 @@
     footer {
         & .container {
             padding: 20px;
-            
 
             & .ft-1 {
                 padding-bottom: 20px;
             }
 
-            & .ft-1, .ft-2, .ft-3, .ft-4 {
+            & .ft-1,
+            .ft-2,
+            .ft-3,
+            .ft-4 {
                 flex-basis: 100%;
                 text-align: center;
                 display: block;
             }
 
-            
-            & .ft-2, .ft-3 {
+            & .ft-2,
+            .ft-3 {
                 & li {
                     &:last-child {
                         padding-bottom: 15px;
@@ -132,7 +134,7 @@
                 padding-top: 20px;
 
                 & p {
-                    font-size: .8em;;
+                    font-size: 0.8em;
                 }
             }
         }

@@ -102,6 +102,16 @@ header.top-header .container nav ul li a:hover {
   border-bottom: 4px solid var(--lime-green);
 }
 
+header.top-header .container .overlay {
+  position: none;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--dark-blue)), to(transparent));
+  background-image: linear-gradient(var(--dark-blue), transparent);
+}
+
 section.hero {
   width: 100%;
   padding: 180px 0;

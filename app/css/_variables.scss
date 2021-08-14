@@ -35,7 +35,16 @@ header.top-header {
                     }
                 }
             }
-        }   
+        }
+
+        & .overlay {
+            position: none;
+            top: 60px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(var(--dark-blue), transparent);
+        }
     }
 }
 
@@ -115,7 +124,7 @@ section.about {
 section.blog {
     width: 100%;
     padding: 100px 0;
-    
+
     & .container {
         & header h1 {
             font-size: 2.4em;
@@ -142,8 +151,9 @@ section.blog {
                 & header {
                     padding: 20px;
 
-                    & span, p {
-                        font-size: .8em;
+                    & span,
+                    p {
+                        font-size: 0.8em;
                         line-height: 1.5;
                         color: var(--grayish-blue);
                     }
@@ -190,17 +200,18 @@ footer {
                 width: 100%;
             }
 
-                & li {
-                    display: inline;
-                    padding-right: 10px;
+            & li {
+                display: inline;
+                padding-right: 10px;
 
-                    &:last-child {
-                        padding: 0;
-                    }
+                &:last-child {
+                    padding: 0;
+                }
             }
         }
 
-        & .ft-2, .ft-3 {
+        & .ft-2,
+        .ft-3 {
             flex-basis: 15%;
             display: flex;
 
